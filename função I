@@ -1,0 +1,25 @@
+def mostrar_cabecalho ():
+    print ("==========")
+    
+def registrar_saudar (nome, estagio, curso):
+    nome = input ("Nome:")
+    estagio = int (input ("Período:"))
+    estagio = estagio * 10
+    curso = input ("Curso:")
+    print (F"bem vindo, {nome}. Status de progressão em {estagio}% no curso de {curso}.")
+ 
+mostrar_cabecalho ()
+print ("Bem vindo ao sistema de matrícula!")
+registrar_saudar ("nome", "estagio", "curso")
+mostrar_cabecalho ()
+
+def comissao (balanco_atual, fator_bonus):
+    novo_balanco = balanco_atual + fator_bonus
+    return novo_balanco
+
+saldo_vendedor = 1200.00
+print ("Fechando nova venda no sistema")
+
+saldo_vendedor = comissao (saldo_vendedor, 150.00)
+
+print (F"O saldo corrigido é de R$:{saldo_vendedor: .2F}")
